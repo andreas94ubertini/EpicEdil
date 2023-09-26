@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EpicEdil.master.cs" Inherits="EpicEdil.EpicEdil" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-image:url(https://www.myfoglio.com/wp-content/uploads/2021/09/background.png);
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header class="d-flex justify-content-center py-3 bg-dark text-light">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="Default.aspx" class="nav-link text-white" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="Insert.aspx" class="nav-link text-white">Inserisci Dipendente</a></li>
+        <li class="nav-item"><a href="PagamentoPage.aspx" class="nav-link text-white">Inserisci Pagamento</a></li>
+      </ul>
+    </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
